@@ -9,15 +9,6 @@ body, h1, h2, h3, h4, p, li, ul {
   margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
 Header {
   background-color: rgba(187, 144, 228, 0.63);
   text-align: center;
@@ -36,7 +27,6 @@ header h1 {
 
 .nav li {
   display: inline;
-  font-weight: bold;
   margin: 1%;
   padding: .5%;
 }
@@ -52,6 +42,8 @@ header h1 {
 }
 
 main {
+  display: grid;
+  place-content: center;
   background-color: rgb(169, 240, 240);
   min-height: 100vh;
 }
@@ -61,44 +53,27 @@ h2 {
   margin-bottom: .5rem;
 }
 
-.main-content-container {
-    display: grid;
-    place-content: center;
-    text-align: center;
-    padding: 2rem;
+.blog-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: auto;
+  width: 95%;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
 }
 
-.main-content {
-    text-align: center;
-    padding: 8px;
+.blog-item {
+  background-color: rgba(189, 111, 228, 0.671);
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: black;
+  text-align: center;
 }
 
-#me {
-    border-radius: 9%;
-    margin: auto;
+a.blog-card {
+  display: grid;
 }
 
-.blog-page {
-    display: grid;
-    margin: auto;
-  }
 
-.blog-content-title {
-    background-color: rgba(51, 9, 167, 0.363);
-    color: white;
-    margin-bottom: 0;
-}
 
-.blog-content-container {
-    display: grid;
-    background-color: rgba(199, 170, 236, 0.568);
-    margin-inline-start: 20%;
-    margin-inline-end: 20%;
-    padding: 2rem;
-}
-
-.blog-content-container p {
-    font-weight: 600;
-    color: black;
-    padding-bottom: 2rem;
-}
