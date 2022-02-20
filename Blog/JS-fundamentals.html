@@ -19,8 +19,49 @@
         <div class="blog-page">
             <h2 class="blog-content-title">Javascript Fundamentals</h2>
             <article class="blog-content-container">
-                <p>To be updated</p>
-            </article>
+                <h3 class="blog-post-content-subheading">HTML, CSS, & JS</h3>
+                <p>Think of HTML as a model, and CSS as the clothes, makeup etc that go onto the model. HTML provides the basic structure and has the content for what goes on a webpage in it, like the written content. CSS is largely responsible for the visual aspect of the webpage. It does things like style the content in the HTML, such as the font type, size, colour etc. Javascript is what brings the webpage to life by creating the interactivity and movement on a page. Javascript would be like the photographer who gives the model instructions on how to move and pose. They’re a bit more complicated than this, but that’s the gist of it.</p>
+
+                <h3 class="blog-post-content-subheading">The DOM</h3>
+                <p>The DOM stands for the document object model. The DOM takes the contents of our HTML document and represents each piece as an object within a treelike structure. It’s sort of like a translator and middleman between our HTML and Javascript. With all the parts of our HTML represented as objects this means that programming languages like Javascript are able to understand and interact with them. Through the DOM Javascript can retrieve and manipulate information from the HTML, which means it can do things like find a paragraph element and change the text content of it. </p>
+
+                <h3 class="blog-post-content-subheading">Control Flow and Loops</h3>
+                <p>Control flow refers to the order in which a program executes the instructions it has been given, by default a program will read and execute from top to bottom within a file. 
+                    <br>
+                    <br>Loops tell the program to repeat a set of instructions until a certain condition is met, they are one of the ways which we can alter control flow. Let’s take your morning routine as an example, normal control flow might see you do steps in an order like: </p>
+                    <ul>
+                    <li>Flick the jug on</li>
+                    <li>Remove bread from fridge</li>
+                    <li>Put bread in toaster to make toast</li>
+                    <li>Put the toaster down</li>
+                    <li>Retrieve toast from toaster</li>
+                    </ul>
+                <p>But what if you’re trying to make toast using vogel’s? That stuff never toasts on the first round! You would need to break your normal control flow by repeating the step of putting the toaster down until your slice of vogel’s finally transforms into toast.</p>
+            
+                <h3 class="blog-post-content-subheading">Arrays and Objects</h3>
+                <p>An array is like a list that we use to store values. A shopping list would be an array, the grocery items in the list would be the values in the array. The items in an array are given a number based on their position in the array, the numbering starts at 0. The number of an item is referred to as an index. For example, let shoppingList = [“milk”, “bananas”, “eggs”] the index of “milk” is 0, “bananas” is 1, “eggs” is 3.
+                <br><br>
+                This index value makes it easy to retrieve items from an array, for example shoppingList[1] would return the value “bananas”. We can also modify the items in arrays too. We can do things like add new ones at specific index positions, remove them, and more.
+                <br><br>
+                An array is an example of a type of object in Javascript. An object is made up of a collection of other “things” (known as properties), often data types, such as primitives and other objects. A primitive is a simple data type which can’t be broken down further, like a boolean or a string. There is nothing more that goes into it, they’re pretty basic and you’re limited with how you can work with them, unlike objects.
+                </p>
+
+                <h3 class="blog-post-content-subheading">Functions</h3>
+                <p>Functions are like the recipes in our code! Functions in Javascript are the pieces of code which tell our program what to do, what gives them the ability to act. We use functions to perform tasks, and calculate or retrieve data for us, like this function which calculates the area of something:</p>
+
+                    <div class="indent">function  calculateArea (width, height) {
+                        <br><div class="indent">return(width * height);</div>
+                        }</div>
+                    
+                    <p>Or we can get them to do other stuff for us like this one which show an alert on the screen</p>
+                    
+                    <div class="indent">function warning() {
+                        <br><div class="indent">alert("CAUTION");</div>
+                        }</div>
+                    
+                    <p>We can also reuse functions throughout our code too! This means we can use the above function to calculate as many areas as we need to. Functions can be as simple as the examples above, or they can be more complicated and can even have functions nested within them. 
+                    </p>
+           </article>
         </div>
     </main>
   </body>
