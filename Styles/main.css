@@ -109,6 +109,7 @@ h2 {
 h3.blog-post-content-subheading {
   text-align: center;
   margin: .5rem;
+  background-color: rgba(240, 248, 255, 0.521);
 }
 
 .indent {
