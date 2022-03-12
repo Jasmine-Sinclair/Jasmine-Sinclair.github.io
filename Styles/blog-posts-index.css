@@ -69,6 +69,7 @@ h2 {
   padding: 2rem;
   color: black;
   text-align: center;
+  max-width: fit-content;
 }
 
 a.blog-card {
